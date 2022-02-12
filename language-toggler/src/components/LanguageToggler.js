@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { FormControl, InputLabel, Select, MenuItem, Input } from '@mui/material';
 
-const LanguageToggler = () => {
-    const [language, setLanguage] = useState('en'); // we'll start out in english 
+const LanguageToggler = ({ language, setLanguage}) => {
 
     return (
         <>
             <FormControl>
                 <InputLabel>Switch Language</InputLabel>
-                <Select value={language} onChange={(e) => setLanguage(e.target.value)}>
+                <Select value={language} onChange={setLanguage}>
                     <MenuItem value='en'>English</MenuItem>
                     <MenuItem value='fr'>French</MenuItem>
                     <MenuItem value='es'>Spanish</MenuItem>
