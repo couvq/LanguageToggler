@@ -10,7 +10,7 @@ const App = () => {
 
     const languageToggler = (e) => {
         setLanguage(e.target.value);
-        // TODO: when language changes, text must change as well
+        // when language changes, text must change as well
 
         setText(prevState => {
             if(prevState === 'Hi, My name is Quentin. I am 22 years old and I work as a software engineer.') {
