@@ -1,5 +1,5 @@
 import React from "react";
-import { FormControl, InputLabel, Select, MenuItem, Input } from '@mui/material';
+import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const LanguageToggler = ({ language, setLanguage}) => {
 
@@ -10,7 +10,6 @@ const LanguageToggler = ({ language, setLanguage}) => {
                 <Select value={language} onChange={setLanguage}>
                     <MenuItem value='en'>English</MenuItem>
                     <MenuItem value='fr'>French</MenuItem>
-                    <MenuItem value='es'>Spanish</MenuItem>
                 </Select>
             </FormControl>
         </>

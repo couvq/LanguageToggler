@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Typography } from '@mui/material';
 
-const TextChangeArea = ({ language }) => {
+const TextChangeArea = ({ text }) => {
 
     return (
         <Container>
-            <Typography variant="h2">
-                Hi, My name is Quentin. I am 22 years old and I work as a software engineer. 
-                {console.log(language)}
+            <Typography variant="h2" >
+                {text}
             </Typography>
         </Container>
     );
